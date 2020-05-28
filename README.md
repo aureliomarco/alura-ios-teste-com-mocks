@@ -13,7 +13,7 @@ Esse é meu código produzido durante o curso.
 :spiral_notepad: :pencil2: Anotações durante o curso, podem ser vistas [AQUI](https://marcoaurelio.slite.com/api/s/note/8Maf3gzST386cCxGcbrznT/iOS-Testando-comportamentos-com-mocks)
 
 ## Aula 01 - Criando classes falsas
-- Introdução
+- [Criação do projeto](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/82c7a3abbda5ffef91967dda650ab5aaa5a2ca30) - commit [82c7a3abbda5ffef91967dda650ab5aaa5a2ca30]
 - Testando o encerrador de leilão
 - Criando classe falsa
 - Instalando o Cuckoo
