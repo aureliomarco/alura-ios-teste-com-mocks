@@ -15,7 +15,7 @@ Esse é meu código produzido durante o curso.
 ## Aula 01 - Criando classes falsas
 - [Criação do projeto](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/82c7a3abbda5ffef91967dda650ab5aaa5a2ca30) - commit [82c7a3abbda5ffef91967dda650ab5aaa5a2ca30]
 - [Testando o encerrador de leilão](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/c12be1542dece8c064452c9d46c81697c47754dc) - commit [c12be1542dece8c064452c9d46c81697c47754dc]
-- Criando classe falsa
+- [Criando classe falsa](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/48bbf9c0d1b7867839b8b65f75ce62fa13ce223a) - commit [48bbf9c0d1b7867839b8b65f75ce62fa13ce223a]
 - Instalando o Cuckoo
 
 ## Aula 02 - Ensinando o mock
