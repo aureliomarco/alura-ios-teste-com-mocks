@@ -11,9 +11,15 @@ import Foundation
 class EncerradorDeLeilao {
     
     private var total = 0
+    private var dao: LeilaoDaoFalso
+    
+    // A classe init foi adicionada para injeção de dependência
+    // E para poder usar as tanto as classes LeilaoDao e LeilaoDaoFalso
+    init(_ leilaoDao: LeilaoDaoFalso) {
+        self.dao = leilaoDao
+    }
     
     func encerra() {
-        let dao = LeilaoDao()
         let todosLeiloesCorrentes = dao.correntes()
         for leilao in todosLeiloesCorrentes {
             if comecouSemanaPassada(leilao) {
