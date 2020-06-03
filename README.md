@@ -19,7 +19,7 @@ Esse é meu código produzido durante o curso.
 - [Instalando o Cuckoo](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/ea4d2f853385901497df7323fecfdf089a3fffd1) - commit [ea4d2f853385901497df7323fecfdf089a3fffd1]
 
 ## Aula 02 - Ensinando o mock
-- Utilizando o Mock
+- [Utilizando o Mock](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/e394b7cac2a832d16be1c49a8307e5de8af6a37d) - commit [e394b7cac2a832d16be1c49a8307e5de8af6a37d]
 - Ensinando mock com o método when-screen
 - Método verify
 
