@@ -11,11 +11,11 @@ import Foundation
 class EncerradorDeLeilao {
     
     private var total = 0
-    private var dao: LeilaoDaoFalso
+    private var dao: LeilaoDao
     
     // A classe init foi adicionada para injeção de dependência
     // E para poder usar as tanto as classes LeilaoDao e LeilaoDaoFalso
-    init(_ leilaoDao: LeilaoDaoFalso) {
+    init(_ leilaoDao: LeilaoDao) {
         self.dao = leilaoDao
     }
     
