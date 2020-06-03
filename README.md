@@ -20,7 +20,7 @@ Esse é meu código produzido durante o curso.
 
 ## Aula 02 - Ensinando o mock
 - [Utilizando o Mock](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/e394b7cac2a832d16be1c49a8307e5de8af6a37d) - commit [e394b7cac2a832d16be1c49a8307e5de8af6a37d]
-- Ensinando mock com o método when-screen
+- [Ensinando mock com o método when-screen](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/024371b6976783734e6a0229f1414fea38ca7e96) - commit [024371b6976783734e6a0229f1414fea38ca7e96]
 - Método verify
 
 ## Aula 03 - Mocks que lançam exceções
