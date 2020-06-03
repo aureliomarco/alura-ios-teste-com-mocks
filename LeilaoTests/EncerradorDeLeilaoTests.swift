@@ -55,13 +55,23 @@ class EncerradorDeLeilaoTests: XCTestCase {
         guard let dataAntiga = formatador.date(from: "2018/05/19") else { return }
         let tvLed = CriadorDeLeilao().para(descricao: "TV Led").naData(data: dataAntiga).constroi()
         
-        let daoFalso = MockLeilaoDao()
+        let daoFalso = MockLeilaoDao().withEnabledSuperclassSpy()
         
         stub(daoFalso) { (daoFalso) in
             when(daoFalso.correntes()).thenReturn([tvLed])
         }
         
+        let encerradorDeLeilao = EncerradorDeLeilao(daoFalso)
+        encerradorDeLeilao.encerra()
         
+        verify(daoFalso).atualiza(leilao: tvLed)
     }
 
+}
+
+
+extension Leilao: Matchable {
+    public var matcher: ParameterMatcher<Leilao> {
+        return equal(to: self)
+    }
 }
