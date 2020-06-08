@@ -13,11 +13,19 @@ import Cuckoo
 class EncerradorDeLeilaoTests: XCTestCase {
 
     var formatador: DateFormatter!
+    var encerradorDeLeilao: EncerradorDeLeilao!
+    var daoFalso: MockLeilaoDao!
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         formatador = DateFormatter()
         formatador.dateFormat = "yyyy/MM/dd"
+        
+        // Este método withEnabledSuperclassSpy()
+        // executa os métodos da classe que não tiveram seu comportamento especificado no stub
+        daoFalso = MockLeilaoDao().withEnabledSuperclassSpy()
+        let carteiroFalso = MockCarteiro().withEnabledSuperclassSpy()
+        encerradorDeLeilao = EncerradorDeLeilao(daoFalso, carteiroFalso)
     }
 
     override func tearDown() {
@@ -32,15 +40,10 @@ class EncerradorDeLeilaoTests: XCTestCase {
         
         let leiloesAntigos = [tvLed, geladeira]
         
-        // Este método withEnabledSuperclassSpy()
-        // executa os métodos da classe que não tiveram seu comportamento especificado no stub
-        let daoFalso = MockLeilaoDao().withEnabledSuperclassSpy()
-        
         stub(daoFalso) { (daoFalso) in
             when(daoFalso.correntes()).thenReturn(leiloesAntigos)
         }
         
-        let encerradorDeLeilao = EncerradorDeLeilao(daoFalso)
         encerradorDeLeilao.encerra()
         
         guard let statusTvLed = tvLed.isEncerrado() else { return }
@@ -55,13 +58,10 @@ class EncerradorDeLeilaoTests: XCTestCase {
         guard let dataAntiga = formatador.date(from: "2018/05/19") else { return }
         let tvLed = CriadorDeLeilao().para(descricao: "TV Led").naData(data: dataAntiga).constroi()
         
-        let daoFalso = MockLeilaoDao().withEnabledSuperclassSpy()
-        
         stub(daoFalso) { (daoFalso) in
             when(daoFalso.correntes()).thenReturn([tvLed])
         }
         
-        let encerradorDeLeilao = EncerradorDeLeilao(daoFalso)
         encerradorDeLeilao.encerra()
         
         verify(daoFalso).atualiza(leilao: tvLed)
