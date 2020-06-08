@@ -24,7 +24,7 @@ Esse é meu código produzido durante o curso.
 - [Método verify](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/9d4c4332c36b709f75abcab5083644c06c405d27) - commit [9d4c4332c36b709f75abcab5083644c06c405d27]
 
 ## Aula 03 - Mocks que lançam exceções
-- Métodos que lançam exceções
+- [Métodos que lançam exceções](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/b2f764b32fa21837fcfdd6410677c6c014219d47) - commit [b2f764b32fa21837fcfdd6410677c6c014219d47]
 - Mocks que lançam exceções
 
 ## Aula 04 - Capturando argumento
