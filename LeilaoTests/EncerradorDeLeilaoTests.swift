@@ -15,6 +15,7 @@ class EncerradorDeLeilaoTests: XCTestCase {
     var formatador: DateFormatter!
     var encerradorDeLeilao: EncerradorDeLeilao!
     var daoFalso: MockLeilaoDao!
+    var carteiroFalso: MockCarteiro!
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -24,7 +25,7 @@ class EncerradorDeLeilaoTests: XCTestCase {
         // Este método withEnabledSuperclassSpy()
         // executa os métodos da classe que não tiveram seu comportamento especificado no stub
         daoFalso = MockLeilaoDao().withEnabledSuperclassSpy()
-        let carteiroFalso = MockCarteiro().withEnabledSuperclassSpy()
+        carteiroFalso = MockCarteiro().withEnabledSuperclassSpy()
         encerradorDeLeilao = EncerradorDeLeilao(daoFalso, carteiroFalso)
     }
 
@@ -65,6 +66,26 @@ class EncerradorDeLeilaoTests: XCTestCase {
         encerradorDeLeilao.encerra()
         
         verify(daoFalso).atualiza(leilao: tvLed)
+    }
+    
+    func testDeveContinuarExecucaoMesmoQuandoDaoFalha() {
+        guard let dataAntiga = formatador.date(from: "2018/05/19") else { return }
+        
+        let tvLed = CriadorDeLeilao().para(descricao: "Tv Led").naData(data: dataAntiga).constroi()
+        let geladeira = CriadorDeLeilao().para(descricao: "Geladeira").naData(data: dataAntiga).constroi()
+        
+        let error = NSError(domain: "Error", code: 0, userInfo: nil)
+        
+        stub(daoFalso) { (daoFalso) in
+            when(daoFalso.correntes()).thenReturn([tvLed, geladeira])
+            when(daoFalso.atualiza(leilao: tvLed)).thenThrow(error)
+        }
+        
+        encerradorDeLeilao.encerra()
+        
+        verify(daoFalso).atualiza(leilao: geladeira)
+        verify(carteiroFalso).envia(geladeira)
+        
     }
 
 }

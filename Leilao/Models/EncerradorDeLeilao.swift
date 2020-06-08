@@ -27,8 +27,13 @@ class EncerradorDeLeilao {
             if comecouSemanaPassada(leilao) {
                 leilao.encerra()
                 total+=1
-                dao.atualiza(leilao: leilao)
-                carteiro.envia(leilao)
+                
+                do {
+                    try dao.atualiza(leilao: leilao)
+                    carteiro.envia(leilao)
+                } catch {
+                    print(error.localizedDescription)
+                }
             }
         }
     }
