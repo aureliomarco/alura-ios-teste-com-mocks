@@ -26,6 +26,9 @@
 		66714377248DB6AF00B3CBCB /* Carteiro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66714376248DB6AF00B3CBCB /* Carteiro.swift */; };
 		668A43A724870A35000663E2 /* EncerradorDeLeilaoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A43A624870A35000663E2 /* EncerradorDeLeilaoTests.swift */; };
 		668A43AC248730E2000663E2 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A43AB248730E2000663E2 /* GeneratedMocks.swift */; };
+		66CFC096248F2DD4000C2F03 /* Pagamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFC095248F2DD4000C2F03 /* Pagamento.swift */; };
+		66CFC098248F2E8E000C2F03 /* RepositorioDePagamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFC097248F2E8E000C2F03 /* RepositorioDePagamento.swift */; };
+		66CFC09A248F2ED7000C2F03 /* GeradorDePagamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFC099248F2ED7000C2F03 /* GeradorDePagamento.swift */; };
 		87030A9AE0C6ED1866EAE846 /* Pods_LeilaoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38DF57ED8C7EFC799D1BD99 /* Pods_LeilaoTests.framework */; };
 		A23F5A0F209CA483000E6525 /* Avaliador.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23F5A0E209CA483000E6525 /* Avaliador.swift */; };
 		A23F5A11209CD8FA000E6525 /* AvaliadorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23F5A10209CD8FA000E6525 /* AvaliadorTests.swift */; };
@@ -78,6 +81,9 @@
 		66714376248DB6AF00B3CBCB /* Carteiro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carteiro.swift; sourceTree = "<group>"; };
 		668A43A624870A35000663E2 /* EncerradorDeLeilaoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncerradorDeLeilaoTests.swift; sourceTree = "<group>"; };
 		668A43AB248730E2000663E2 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		66CFC095248F2DD4000C2F03 /* Pagamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagamento.swift; sourceTree = "<group>"; };
+		66CFC097248F2E8E000C2F03 /* RepositorioDePagamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorioDePagamento.swift; sourceTree = "<group>"; };
+		66CFC099248F2ED7000C2F03 /* GeradorDePagamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeradorDePagamento.swift; sourceTree = "<group>"; };
 		7A02B7555041DD36E6C17E51 /* Pods-Leilao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leilao.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leilao/Pods-Leilao.debug.xcconfig"; sourceTree = "<group>"; };
 		96B13E362E12E632B3A49E78 /* Pods-Leilao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leilao.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leilao/Pods-Leilao.release.xcconfig"; sourceTree = "<group>"; };
 		A23F5A0E209CA483000E6525 /* Avaliador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avaliador.swift; sourceTree = "<group>"; };
@@ -206,6 +212,9 @@
 				A26FBA9320A32DE60090FC1F /* CriadorDeLeilao.swift */,
 				038136CA20B48B5F005FEDD7 /* EncerradorDeLeilao.swift */,
 				66714376248DB6AF00B3CBCB /* Carteiro.swift */,
+				66CFC095248F2DD4000C2F03 /* Pagamento.swift */,
+				66CFC097248F2E8E000C2F03 /* RepositorioDePagamento.swift */,
+				66CFC099248F2ED7000C2F03 /* GeradorDePagamento.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -475,9 +484,12 @@
 				03FA4B25209353AF0047D61B /* Lance.swift in Sources */,
 				038136CB20B48B5F005FEDD7 /* EncerradorDeLeilao.swift in Sources */,
 				03FA4AF1209353270047D61B /* AppDelegate.swift in Sources */,
+				66CFC098248F2E8E000C2F03 /* RepositorioDePagamento.swift in Sources */,
 				A26FBA9420A32DE60090FC1F /* CriadorDeLeilao.swift in Sources */,
+				66CFC096248F2DD4000C2F03 /* Pagamento.swift in Sources */,
 				66714377248DB6AF00B3CBCB /* Carteiro.swift in Sources */,
 				03FA4B27209353CB0047D61B /* Usuario.swift in Sources */,
+				66CFC09A248F2ED7000C2F03 /* GeradorDePagamento.swift in Sources */,
 				03FA4AF9209353270047D61B /* Leilao.xcdatamodeld in Sources */,
 				A23F5A0F209CA483000E6525 /* Avaliador.swift in Sources */,
 				038136C720B48AD8005FEDD7 /* FormatadorData.swift in Sources */,
