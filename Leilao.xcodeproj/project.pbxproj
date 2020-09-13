@@ -12,7 +12,6 @@
 		038136C720B48AD8005FEDD7 /* FormatadorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038136C620B48AD8005FEDD7 /* FormatadorData.swift */; };
 		038136CB20B48B5F005FEDD7 /* EncerradorDeLeilao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038136CA20B48B5F005FEDD7 /* EncerradorDeLeilao.swift */; };
 		03FA4AF1209353270047D61B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA4AF0209353270047D61B /* AppDelegate.swift */; };
-		03FA4AF3209353270047D61B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA4AF2209353270047D61B /* ViewController.swift */; };
 		03FA4AF6209353270047D61B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FA4AF4209353270047D61B /* Main.storyboard */; };
 		03FA4AF9209353270047D61B /* Leilao.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03FA4AF7209353270047D61B /* Leilao.xcdatamodeld */; };
 		03FA4AFB209353290047D61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FA4AFA209353290047D61B /* Assets.xcassets */; };
@@ -30,6 +29,8 @@
 		66CFC098248F2E8E000C2F03 /* RepositorioDePagamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFC097248F2E8E000C2F03 /* RepositorioDePagamento.swift */; };
 		66CFC09A248F2ED7000C2F03 /* GeradorDePagamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFC099248F2ED7000C2F03 /* GeradorDePagamento.swift */; };
 		66F026DA250D9C070007B2C8 /* GeradorDePagamentoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F026D9250D9C070007B2C8 /* GeradorDePagamentoTests.swift */; };
+		66F026DE250ECD630007B2C8 /* LeiloesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F026DD250ECD630007B2C8 /* LeiloesViewControllerTests.swift */; };
+		66F026E2250ECEDC0007B2C8 /* LeiloesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F026E1250ECEDC0007B2C8 /* LeiloesViewController.swift */; };
 		87030A9AE0C6ED1866EAE846 /* Pods_LeilaoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38DF57ED8C7EFC799D1BD99 /* Pods_LeilaoTests.framework */; };
 		A23F5A0F209CA483000E6525 /* Avaliador.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23F5A0E209CA483000E6525 /* Avaliador.swift */; };
 		A23F5A11209CD8FA000E6525 /* AvaliadorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23F5A10209CD8FA000E6525 /* AvaliadorTests.swift */; };
@@ -63,7 +64,6 @@
 		038136CA20B48B5F005FEDD7 /* EncerradorDeLeilao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncerradorDeLeilao.swift; sourceTree = "<group>"; };
 		03FA4AED209353270047D61B /* Leilao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leilao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FA4AF0209353270047D61B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03FA4AF2209353270047D61B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03FA4AF5209353270047D61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03FA4AF8209353270047D61B /* Leilao.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Leilao.xcdatamodel; sourceTree = "<group>"; };
 		03FA4AFA209353290047D61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +86,8 @@
 		66CFC097248F2E8E000C2F03 /* RepositorioDePagamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorioDePagamento.swift; sourceTree = "<group>"; };
 		66CFC099248F2ED7000C2F03 /* GeradorDePagamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeradorDePagamento.swift; sourceTree = "<group>"; };
 		66F026D9250D9C070007B2C8 /* GeradorDePagamentoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeradorDePagamentoTests.swift; sourceTree = "<group>"; };
+		66F026DD250ECD630007B2C8 /* LeiloesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeiloesViewControllerTests.swift; sourceTree = "<group>"; };
+		66F026E1250ECEDC0007B2C8 /* LeiloesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeiloesViewController.swift; sourceTree = "<group>"; };
 		7A02B7555041DD36E6C17E51 /* Pods-Leilao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leilao.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leilao/Pods-Leilao.debug.xcconfig"; sourceTree = "<group>"; };
 		96B13E362E12E632B3A49E78 /* Pods-Leilao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leilao.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leilao/Pods-Leilao.release.xcconfig"; sourceTree = "<group>"; };
 		A23F5A0E209CA483000E6525 /* Avaliador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avaliador.swift; sourceTree = "<group>"; };
@@ -186,12 +188,10 @@
 		03FA4B07209353290047D61B /* LeilaoTests */ = {
 			isa = PBXGroup;
 			children = (
-				03FA4B08209353290047D61B /* LeilaoTests.swift */,
-				A23F5A10209CD8FA000E6525 /* AvaliadorTests.swift */,
-				668A43A624870A35000663E2 /* EncerradorDeLeilaoTests.swift */,
+				66F026DB250ECCDE0007B2C8 /* Models */,
+				66F026DC250ECD110007B2C8 /* Controllers */,
 				03FA4B0A209353290047D61B /* Info.plist */,
 				668A43AB248730E2000663E2 /* GeneratedMocks.swift */,
-				66F026D9250D9C070007B2C8 /* GeradorDePagamentoTests.swift */,
 			);
 			path = LeilaoTests;
 			sourceTree = "<group>";
@@ -225,7 +225,7 @@
 		03FA4B23209353940047D61B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				03FA4AF2209353270047D61B /* ViewController.swift */,
+				66F026E1250ECEDC0007B2C8 /* LeiloesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -241,6 +241,25 @@
 				0CF7CCCF5DC3FEF7719DA049 /* Pods-LeilaoUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		66F026DB250ECCDE0007B2C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03FA4B08209353290047D61B /* LeilaoTests.swift */,
+				A23F5A10209CD8FA000E6525 /* AvaliadorTests.swift */,
+				668A43A624870A35000663E2 /* EncerradorDeLeilaoTests.swift */,
+				66F026D9250D9C070007B2C8 /* GeradorDePagamentoTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		66F026DC250ECD110007B2C8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				66F026DD250ECD630007B2C8 /* LeiloesViewControllerTests.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		CCBF89A0B834C6B7C379A4EA /* Frameworks */ = {
@@ -482,7 +501,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03FA4AF3209353270047D61B /* ViewController.swift in Sources */,
 				038136C120B4889E005FEDD7 /* LeilaoDao.swift in Sources */,
 				03FA4B25209353AF0047D61B /* Lance.swift in Sources */,
 				038136CB20B48B5F005FEDD7 /* EncerradorDeLeilao.swift in Sources */,
@@ -494,6 +512,7 @@
 				03FA4B27209353CB0047D61B /* Usuario.swift in Sources */,
 				66CFC09A248F2ED7000C2F03 /* GeradorDePagamento.swift in Sources */,
 				03FA4AF9209353270047D61B /* Leilao.xcdatamodeld in Sources */,
+				66F026E2250ECEDC0007B2C8 /* LeiloesViewController.swift in Sources */,
 				A23F5A0F209CA483000E6525 /* Avaliador.swift in Sources */,
 				038136C720B48AD8005FEDD7 /* FormatadorData.swift in Sources */,
 				03FA4B29209354F50047D61B /* Leilao.swift in Sources */,
@@ -506,6 +525,7 @@
 			files = (
 				66F026DA250D9C070007B2C8 /* GeradorDePagamentoTests.swift in Sources */,
 				668A43A724870A35000663E2 /* EncerradorDeLeilaoTests.swift in Sources */,
+				66F026DE250ECD630007B2C8 /* LeiloesViewControllerTests.swift in Sources */,
 				03FA4B09209353290047D61B /* LeilaoTests.swift in Sources */,
 				A23F5A11209CD8FA000E6525 /* AvaliadorTests.swift in Sources */,
 				668A43AC248730E2000663E2 /* GeneratedMocks.swift in Sources */,
