@@ -37,7 +37,7 @@ class GeradorDePagamentoTests: XCTestCase {
             when(daoFalso.encerrados()).thenReturn([playstation])
         }
         
-        let geradorDePagamento = GeradorDePagamento(daoFalso ?? MockLeilaoDao(), avaliador ?? Avaliador(), repositorioDePagamento: pagamentos ?? MockRepositorioDePagamento())
+        let geradorDePagamento = GeradorDePagamento(daoFalso ?? MockLeilaoDao(), avaliador ?? Avaliador(), pagamentos ?? MockRepositorioDePagamento())
         geradorDePagamento.gera()
         
         let capturadorDeArgumento = ArgumentCaptor<Pagamento>()
@@ -58,13 +58,25 @@ class GeradorDePagamentoTests: XCTestCase {
             when(daoFalso.encerrados()).thenReturn([iPhone])
         }
         
-        let geradorDePagamento = GeradorDePagamento(daoFalso ?? MockLeilaoDao(), avaliador ?? Avaliador(), repositorioDePagamento: pagamentos ?? MockRepositorioDePagamento())
+        let formatador = DateFormatter()
+        formatador.dateFormat = "yyyy/MM/dd"
+        guard let dataAntiga = formatador.date(from: "2018/05/19") else { return }
+        
+        let geradorDePagamento = GeradorDePagamento(daoFalso ?? MockLeilaoDao(), avaliador ?? Avaliador(), pagamentos ?? MockRepositorioDePagamento(), dataAntiga)
         geradorDePagamento.gera()
         
         let capturadorDeArgumento = ArgumentCaptor<Pagamento>()
         verify(pagamentos ?? MockRepositorioDePagamento()).salva(capturadorDeArgumento.capture())
         
         let pagamentoGerado = capturadorDeArgumento.value
+        
+        let formatadorDeData = DateFormatter()
+        formatadorDeData.dateFormat = "ccc"
+        
+        guard let dataDoPagamento = pagamentoGerado?.getData() else { return }
+        let diaDaSemana = formatadorDeData.string(from: dataDoPagamento)
+        
+        XCTAssertEqual("Mon", diaDaSemana)
     }
     
 }
