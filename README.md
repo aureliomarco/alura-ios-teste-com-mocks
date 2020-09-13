@@ -29,7 +29,7 @@ Esse é meu código produzido durante o curso.
 
 ## Aula 04 - Capturando argumento
 - [Criando cenário de teste](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/887aa7e4cfef12f1ce18390687a1749f7261aa07) - commit [887aa7e4cfef12f1ce18390687a1749f7261aa07]
-- Ensinando mock com when
+- [Ensinando mock com when](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/d184accf9b71dceb43097b02132a3862a4ca2234) - commit [d184accf9b71dceb43097b02132a3862a4ca2234]
 - Capturando argumento
 
 ## Aula 05 - Isolando para testar
