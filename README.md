@@ -28,7 +28,7 @@ Esse é meu código produzido durante o curso.
 - [Mocks que lançam exceções](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/7afd04433d2b7c9173975ca5af11aff6efad32b8) - commit [7afd04433d2b7c9173975ca5af11aff6efad32b8]
 
 ## Aula 04 - Capturando argumento
-- Criando cenário de teste
+- [Criando cenário de teste](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/887aa7e4cfef12f1ce18390687a1749f7261aa07) - commit [887aa7e4cfef12f1ce18390687a1749f7261aa07]
 - Ensinando mock com when
 - Capturando argumento
 
