@@ -37,7 +37,7 @@ Esse é meu código produzido durante o curso.
 - [Isolando para testar](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/0f41294eecc70fc0097d216b1e5aa3f941796e48) - commit [0f41294eecc70fc0097d216b1e5aa3f941796e48]
 
 ## Aula 06 - Testando View Controller
-- Testando view controllers
+- [Testando view controllers](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/ae4e37e8600bccde72d613aab93cfd346996b455) - commit [ae4e37e8600bccde72d613aab93cfd346996b455]
 - Testando métodos de data source
 - Testando método CellForRow
 - Testando reutilização de células
