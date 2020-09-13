@@ -12,14 +12,19 @@ import XCTest
 class LeiloesViewControllerTests: XCTestCase {
     
     var sut: LeiloesViewController?
+    var tableView: UITableView?
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         if #available(iOS 13.0, *) {
             sut = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "home") as? LeiloesViewController
         } else {
-            // Fallback on earlier versions
+            sut = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "home") as? LeiloesViewController
         }
+        
+        _ = sut?.view
+        tableView = sut?.tableView
+        tableView?.dataSource = sut
     }
     
     override func tearDown() {
@@ -40,15 +45,21 @@ class LeiloesViewControllerTests: XCTestCase {
     }
     
     func testNumberOfRowsInSectionDeveSerQuantidadeDeLeiloesDaLista() {
-        let tableView = UITableView()
-        tableView.dataSource = sut
-        
         sut?.addLeilao(Leilao(descricao: "Playstation 4"))
-        XCTAssertEqual(tableView.numberOfRows(inSection: 0), 1)
+        XCTAssertEqual(tableView?.numberOfRows(inSection: 0), 1)
         
         sut?.addLeilao(Leilao(descricao: "iPhone X"))
-        tableView.reloadData()
-        XCTAssertEqual(tableView.numberOfRows(inSection: 0), 2)
+        tableView?.reloadData()
+        XCTAssertEqual(tableView?.numberOfRows(inSection: 0), 2)
+    }
+    
+    func testCellForRowDeveRetornarLeilaoTableViewCell() {
+        sut?.addLeilao(Leilao(descricao: "TV Led"))
+        tableView?.reloadData()
+        
+        let celula = tableView?.cellForRow(at: IndexPath(row: 0, section: 0))
+        XCTAssertTrue(celula is LeilaoTableViewCell)
+        
     }
     
 }
