@@ -30,4 +30,14 @@ class GeradorDePagamento {
             repositorioDePagamento.salva(novoPagamento)
         }
     }
+    
+    func proximoDiaUtil() -> Date {
+        var dataAtual = Date()
+        
+        while Calendar.current.isDateInWeekend(dataAtual) {
+            dataAtual = Calendar.current.date(byAdding: .day, value: 1, to: dataAtual) ?? Date()
+        }
+        
+        return dataAtual
+    }
 }
