@@ -41,3 +41,7 @@ Esse é meu código produzido durante o curso.
 - [Testando métodos de data source](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/7a386607fd8702cfbf6fc49573cce3465549e127) - commit [7a386607fd8702cfbf6fc49573cce3465549e127]
 - [Testando método CellForRow](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/ba66b6f8b8df13fb755baef29adb23ab3010fd03) - commit [ba66b6f8b8df13fb755baef29adb23ab3010fd03]
 - [Testando reutilização de células](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/bfdd92e425586204b0380b5afcf688800adcd4c3) - commit [bfdd92e425586204b0380b5afcf688800adcd4c3]
+
+<p align="left">
+  <img width="700" height="441" src="gif/test.gif">
+</p>
