@@ -59,7 +59,30 @@ class LeiloesViewControllerTests: XCTestCase {
         
         let celula = tableView?.cellForRow(at: IndexPath(row: 0, section: 0))
         XCTAssertTrue(celula is LeilaoTableViewCell)
-        
     }
     
+    func testCellForRowDeveChamarDequeReusableCell() {
+        let mockTableView = MockTableView()
+        mockTableView.dataSource = sut
+        
+        mockTableView.register(LeilaoTableViewCell.self, forCellReuseIdentifier: "LeilaoTableViewCell")
+        
+        sut?.addLeilao(Leilao(descricao: "Macbook Pro"))
+        mockTableView.reloadData()
+        
+        _ = mockTableView.cellForRow(at: IndexPath(row: 0, section: 0))
+        
+        XCTAssertTrue(mockTableView.celulaFoiReutilizada)
+    }
+}
+
+extension LeiloesViewControllerTests {
+    class MockTableView: UITableView {
+        var celulaFoiReutilizada = false
+        
+        override func dequeueReusableCell(withIdentifier identifier: String, for indexPath: IndexPath) -> UITableViewCell {
+            celulaFoiReutilizada = true
+            return super.dequeueReusableCell(withIdentifier: "LeilaoTableViewCell", for: indexPath)
+        }
+    }
 }
