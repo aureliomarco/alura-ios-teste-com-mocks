@@ -12,6 +12,24 @@ Esse é meu código produzido durante o curso.
 
 :spiral_notepad: :pencil2: Anotações durante o curso, podem ser vistas [AQUI](https://marcoaurelio.slite.com/api/s/note/8Maf3gzST386cCxGcbrznT/iOS-Testando-comportamentos-com-mocks)
 
+### Setup
+- IDE: Xcode 11.1 (Versão do XCode onde o projeto foi desenvolvido)
+- Versão Swift: 5.1
+
+1. Clone o repositório na sua máquina.
+```
+git clone git@github.com:aureliomarco/alura-ios-teste-com-mocks.git
+```
+2. Navegue até o diretório (pasta) onde o repositório foi clonado.
+3. Instale as dependências com seguinte comando
+```
+pod install
+```
+4. Abra o arquivo do projeto
+```
+open Leilao.xcworkspace
+```
+
 ## Aula 01 - Criando classes falsas
 - [Criação do projeto](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/82c7a3abbda5ffef91967dda650ab5aaa5a2ca30) - commit [82c7a3abbda5ffef91967dda650ab5aaa5a2ca30]
 - [Testando o encerrador de leilão](https://github.com/aureliomarco/alura-ios-teste-com-mocks/commit/c12be1542dece8c064452c9d46c81697c47754dc) - commit [c12be1542dece8c064452c9d46c81697c47754dc]
